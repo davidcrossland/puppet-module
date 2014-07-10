@@ -1,0 +1,16 @@
+import datetime
+import sys
+import shutil
+
+filename = sys.argv[0] 
+dest = sys.argv[1]
+
+start = datetime.datetime.now()
+
+
+shutil.copy(filename, dest)
+
+done = datetime.datetime.now()
+elapsed = done - start
+print(elapsed) 
+
